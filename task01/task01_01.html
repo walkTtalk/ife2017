@@ -133,9 +133,30 @@
 
 		<aside>
 			<h2>这里以后是一个侧栏，这是侧栏的标题</h2>
-			<h3>侧栏注册窗口标题</h3>
+			<div>
+				<h2>侧栏注册窗口标题</h2>
+				<form>
+					<label>请输入邮箱地址：</label>
+					<input type="email" placeholder="这是一个文本输入框" ><br/>
+					<p>邮箱地址请按要求格式输入</p>
+					<label>请输入密码：</label><input type="password" placeholder="这是一个文本输入框">请重复输入密码：<input type="password" placeholder="这是一个文本输入框">
+					<p>密码请为6-16位英文数字</p>
+					<label>性别：</label><input type="radio" name="sex" value="1">男<input type="radio" name="sex" value="2" checked>女
+					<label>城市：</label><select name="city">
+						<option value="suzhou">苏州</option>
+						<option value="hangzhou">杭州</option>
+					</select>
+					<label>爱好：</label>
+					<label><input name="hobby" type="checkbox" value="sports">运动</label>
+					<label><input name="hobby" type="checkbox" value="arts">艺术</label>
+					<label><input name="hobby" type="checkbox" value="science">科学</label>
+					<label>个人描述：</label><textarea placeholder="这是一个多行输入框，输入您的个人描述"></textarea>
+					<button>确认提交</button>
+				</form>
+			</div>
 
 		</aside>
+		<footer>版权所有&copy</footer>
 
 	</div>
 
