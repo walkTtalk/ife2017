@@ -9,7 +9,7 @@ body{
 .banxin{
 	margin: 0 auto;
 	width: 1280px;
-	height: 100%;
+	height: 3840px;
 	background: #DEDEDE;
 }
 
@@ -251,4 +251,14 @@ form button{
 	font-size: 18px;
 	color: white;
 	border: 0;
+}
+
+/*footer*/
+.footer{
+	width: 100%;
+	height: 60px;
+	color: white;
+	text-align: center;
+	padding-top: 20px;
+	font-size: 12px;
 }
