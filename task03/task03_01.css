@@ -1,0 +1,77 @@
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.content:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.content{
+	background: #eee;
+	border: 1px solid #999;
+	margin-left: 30px;
+	margin-right: 30px;
+	padding-top: 30px;
+	height: 560px;
+	margin-top: 30px;
+}
+.wrap{
+	height: 470px;
+	background: white;
+	margin-left: 250px;
+	margin-right: 180px;
+	padding: 15px;
+	border: 1px solid #999;
+}
+.wrap p{
+	margin-top: 10px;
+	font-family: verdana;
+	font-size: 16px;
+}
+.team{
+	width: 200px;
+	height: 160px;
+	border: 1px solid #999;
+	background: white;
+	margin-left: -98%;
+}
+.team p{
+	float: right;
+	padding-top: 30px;
+	margin-right: 13px;
+}
+.logo{
+	width: 80px;
+	height: 80px;
+	background: #eee;
+	margin-top: 20px;
+	margin-left: 20px;
+	float: left;
+	border: 1px solid #999;
+}
+.logo_top{
+	display: block;
+	padding-top: 30px;
+	padding-left: 10px;
+	font-size: 12px;
+}
+.logo_botom{
+	font-size: 12px;
+	padding-left: 15px;
+}
+.intro{
+	width: 100%;
+}
+.personal{
+	width: 120px;
+	height: 530px;
+	border: 1px solid #999;
+	background: white;
+	margin-left: -150px;
+}
+.team, .intro, .personal{
+	float: left;
+}
