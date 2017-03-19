@@ -141,7 +141,8 @@
 }
 .article-l p{
 	margin-top: 10px;
-	color: #CCC;
+	color: #231815;
+	font-family: "微软雅黑";
 }
 .article-l .center{
 	color: #d2994f;
@@ -155,9 +156,12 @@
 
 
 /*main*/
+.main{
+	height: 760px;
+}
 .description {
 	width: 415px;
-	height: 765px;
+	height: 715px;
 	/*background: yellow;*/
 	float: left;
 }
@@ -184,6 +188,8 @@
 }
 .description p{
 	text-indent: 2em;
+	color: #767777;
+	font-family: "宋体";
 }
 .data{
 	width: 458px;
@@ -225,8 +231,8 @@
 
 .data-bottom{
 	width: 459px;
-	height: 445px;
-	background: #CCC;
+	height: 391px;
+	background: #EEEED6;
 	margin-top: 15px;
 	padding-top: 30px;
 }
@@ -256,13 +262,13 @@
 
 
 .page{
-	height: 232px;
+	height: 192px;
 	padding-right: 15px;
 	/*background: blue;*/
 }
 .page-l{
 	width: 244px;
-	height: 192px;
+	height: 138px;
 	background: #D55D5C;
 	float: left;
 	padding: 20px 8px;
@@ -278,14 +284,15 @@
 	height: 86px;
 	border-left: 2px solid #FFF;
 	margin-top: 31px;
+	color: white;
 }
 .right .words{
 	font-style: italic;
-	font-size: 21px;
-	color: #FFF;
+	font-size: 18px;
 	font-family: "黑体";
-	padding-left: 10px;
+	padding-left: 5px;
 	margin-bottom: 0px;
+	padding-bottom: 0;
 }
 .right p{
 	font-size: 12px;
@@ -293,15 +300,34 @@
 }
 .page-r{
 	width: 164px;
+	height: 130px;
+	margin-top: 11px;
 	/*background: skyblue;*/
 	float: right;
+	font-style: italic;
 	font-size: 14px;
 	font-family: "黑体";
 	/*margin-top: -40px;*/
-	/*position: relative;*/
+	position: relative;
+	text-indent: 2em;
 }
- .page-r .marks{
-	/*font-size: 72px;*/
+ .page-r .markOne{
+ 	font-size: 72px;
+	position: absolute;
+	top:-20px;
+	left:-70px;
+	/*float: left;*/
+	font-style: normal;
+	font-family: "黑体";
+	color: #d45d5c;
+}
+ .page-r .markTwo{
+ 	font-size: 72px;
+	position: absolute;
+	bottom: -29px;
+	right: -38px;
+	/*float: left;*/
+	font-style: normal;
 	font-family: "黑体";
 	color: #d45d5c;
 }
