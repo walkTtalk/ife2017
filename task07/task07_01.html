@@ -58,21 +58,33 @@
 
 	<!-- active -->
 	<div class="active">
-		<p>查找<span>城</span>市活动信息</p>
+		<span>查找新世界城市活动信息</span>
 		<p>每个城市的有不同的活动信息，请自主查询您所需要了解的城市</p>
-		<select name="country">
-			<option value="中国">中国</option>
-			<option value="美国">美国</option>
-			<option value="德国">德国</option>
-			<option value="英国">英国	</option>
-		</select>
-		<select value="省份">
-			<option value="北京市">北京市</option>
-			<option value="天津市">天津市</option>
-			<option value="河北省">河北省</option>
-		</select>
-		<input type="text" placeholder="城市">
-		<button>搜索</button>
+		<form action="">
+			<select name="country">
+				<option value="中国" selected="selected">中国</option>
+				<option value="美国">美国</option>
+				<option value="德国">德国</option>
+				<option value="英国">英国	</option>
+			</select>
+			<select name="province">
+				<option value="省份" selected="selected">省份</option>
+				<option value="北京市">北京市</option>
+				<option value="浙江省">浙江省</option>
+				<option value="江苏省">江苏省</option>
+				<option value="河北省">河北省</option>
+				
+			</select>
+			<select name="city">
+				<option value="城市" selected="selected">城市</option>
+				<option value="北京市">北京市</option>
+				<option value="杭州">杭州</option>
+				<option value="苏州">苏州</option>
+				<option value="武汉">武汉</option>
+				
+			</select>
+		</form>
+		<a href="#" class="search">搜索</a>
 	</div>
 
 	<!-- actives -->
@@ -121,7 +133,7 @@
 				<p>
 					新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界新世界是个新世界
 				</p>
-				<button>更多详情</button>
+				<a href="#">更多详情</a>
 				<div class="more"></div>
 			</div>
 		</div>
@@ -130,14 +142,25 @@
 	<!-- loveLife -->
 	<div class="loveLife clearfix">
 		<div class="loveOne fl">
-			新时代<br/>
-			关于爱<span>生活</span>的我们<br/>
-			<button>查看更多</button>
+			<div class="loveOne-con">
+				
+					<span>
+						新时代<br/>
+						关于爱生活的我们
+					</span>
+			
+				<a href="#">查看更多</a>
+			</div>
 		</div>
 		<div class="loveTwo fl">
-			新时代<br/>
-			关于爱<span>生活</span>的我们<br/>
-			<button>查看更多</button>
+			<div class="loveTwo-con">
+				
+				<span>
+					新时代<br/>
+					关于爱生活的我们
+				</span>
+				<a href="#">查看更多</a>
+			</div>
 		</div>
 		<div class="loveThree fl">
 			<img src="images/loveThree.jpg">
@@ -152,19 +175,19 @@
 		<div class="contact">
 			<div class="contact-l fl">
 				<h2>新世界志愿者协议</h2>
-				<p>加入新世界志愿者的人员必须准守中华人民共共和国的相关法律法规，并且本着平等资源的原则 .....</p><span>more</span>
+				<p>加入新世界志愿者的人员必须准守中华人民共共和国的相关法律法规，并且本着平等资源的原则 .....</p><span><img src="images/more2.jpg">more</span>
 
 				<h3>新世界志愿者协议</h3>
-				<p>加入新世界志愿者的人员必须准守中华人民共共和国的相关法律法规，并且本着平等资源的原则 .....</p><span>more</span>
+				<p>加入新世界志愿者的人员必须准守中华人民共共和国的相关法律法规，并且本着平等资源的原则 .....</p><span><img src="images/more2.jpg">more</span>
 
-				<h3>更多条款</h3><span>more</span>
+				<h3>更多条款</h3><span><img src="images/more2.jpg">more</span>
 			</div>
 			<form class="contact-r fr">
-				<input type="text" placeholder="姓名：">
-				<input type="text" placeholder="年龄：" class="fr">
-				<input type="text" placeholder="联系方式：">
-				<input type="text" placeholder="联系地址："  class="fr">
-				<textarea placeholder="请简单描述您梦想的生活："></textarea>
+				<input type="text" value="姓名：">
+				<input type="text" value="年龄：" class="fr">
+				<input type="text" value="联系方式：">
+				<input type="text" value="联系地址："  class="fr">
+				<textarea>请简单描述您梦想的生活：</textarea>
 				<button>提交申请</button>
 			</form>
 		</div>
@@ -173,16 +196,20 @@
 
 	<!-- footer -->
 	<div class="footer">
-		<h3>联系我们</h3>
-		<p>为了更好的获取我们最新的产品咨询，您可以留下您的电子邮箱快速订阅我们的产品咨询<br/>也可以通过一下任何方式关注我们的动态</p>
-		<form>
-			<input type="email" placeholder="someone@email.com" class="email">
-			<input type="submit" class="btn">
-		</form>
-		<div class="sprites">
+		<div class="footer-top">
+			<h3>联系我们</h3>
+			<p>为了更好的获取我们最新的产品咨询，您可以留下您的电子邮箱快速订阅我们的产品咨询<br/>也可以通过一下任何方式关注我们的动态</p>
+			<div class="email">
+				<form>
+					<input type="email" placeholder="someone@email.com">
+					<button>提交</button>
+				</form>
+			</div>
+			<div class="sprites">
 			<img src="images/sprites.jpg">
-		</div>
+			</div>
 		
+		</div>
 	</div>
 	<div class="footer_bot">
 			<span>@2016新世界</span>

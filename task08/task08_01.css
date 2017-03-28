@@ -1,0 +1,57 @@
+body{
+	margin: 0;
+	width: 100%;
+}
+#Frame{
+	padding: 10px; /*使内部方块与浏览器之间的距离为20px*/
+}
+[class*="col-"]{
+	box-sizing: border-box;
+	padding: 10px; /*使内部方块之间的距离为20px*/
+	float: left;
+}
+
+.box{
+	background: yellow;
+	border: 1px solid #999;
+	height: 48px;
+}
+
+/*width大于768px时*/
+@media only screen and (min-width: 769px){
+	.col-sm-6{
+		width: 50%;
+	}
+	.col-sm-4{
+		width: 33.33%;
+	}
+	.col-sm-3{
+		width: 25%;
+	}
+	.col-sm-2{
+		width: 16.66%;
+	}
+	.col-sm-1{
+		width: 8.33%;
+	}
+
+	/*width大于768时*/
+	@media only screen and(max-width: 768px){
+		.col-md-12{
+			width: 100%;
+		}
+		.col-md-8{
+			width: 66.66%;
+		}
+		.col-md-6{
+			width: 50%;
+		}
+		.col-md-3{
+			width: 25%;
+		}
+		.col-md-2{
+			width: 16.66%;
+		}
+	}
+}
+
