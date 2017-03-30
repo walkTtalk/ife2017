@@ -1,0 +1,118 @@
+
+.body{
+	margin: 0;
+	padding: 0;
+}
+table{
+	margin: 0 auto;
+}
+.top td{
+	background-color: black;
+	color: white;
+}
+.top1 td{
+	color: red;
+}
+.top2 td{
+	color: red;
+	background: #CCC;
+}
+.top4 td{
+	color: black;
+	background: #CCC;
+}
+.top5 td{
+	color: black;
+}
+
+
+
+.oblong1{
+	width: 100px;
+	height: 20px;
+	border: 1px solid #CCC;
+	box-shadow: 0 0 5px #CCC;
+	margin: 0 auto;
+	margin-top: 50px;
+}
+.oblong2{
+	width: 200px;
+	height: 20px;
+	border: 3px solid #71A8E1;
+	border-radius: 5px;
+	box-shadow: 0px 0px 5px #71A8E1;
+	margin: 0 auto;
+	margin-top: 30px;
+}
+
+.rectangle1{
+	width: 300px;
+	height: 130px;
+	background: #008100;
+	margin: 0 auto;
+	margin-top:50px;
+	box-shadow: 0 0 2px #008100;
+	position: relative;
+}
+ .box1{
+	width: 30px;
+	height: 30px;
+	background: rgba(204,204,204,0.6);
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	bottom: 0;
+	right: 64px;
+	color: white;
+}
+ .box2{
+	width: 30px;
+	height: 30px;
+	background: rgba(204,204,204,0.6);
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+	margin-right: 2px;
+	color: white;
+}
+ .box3{
+	width: 30px;
+	height: 30px;
+	background: rgba(204,204,204,0.6);
+	text-align: center;
+	line-height: 30px;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	color: white;
+}
+
+
+
+
+.rectangle2{
+	width: 300px;
+	height: 130px;
+	background: #008100;
+	margin: 0 auto;
+	margin-top:50px;
+	box-shadow: 0 0 2px #008100;
+	position: relative;
+}
+.rectangle2 .blue1{
+	width: 150px;
+	height: 130px;
+	background: #0100FE;
+	box-shadow: 0 0 2px #0100FE;
+}
+.rectangle3{
+	width: 300px;
+	height: 130px;
+	background: #0100FE;
+	margin: 0 auto;
+	margin-top:50px;
+	box-shadow: 0 0 2px #0100FE;
+	position: relative;
+}
