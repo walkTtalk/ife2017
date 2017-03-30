@@ -35,7 +35,7 @@ body{
 		width: 8.33%;
 	}
 
-	/*width大于768时*/
+	/*width小于768时*/
 	@media only screen and(max-width: 768px){
 		.col-md-12{
 			width: 100%;
