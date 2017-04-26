@@ -1,0 +1,72 @@
+/*将来所有的css的样式我们都要放在css文件中*/
+/*css 初始化 B*/
+*{
+	margin:0;
+	padding:0;
+}
+img,input{
+	border:0;
+}
+ul{
+	list-style: none;
+}
+body{
+	font-size: 12px;
+	color: #000;
+	font-family: "宋体";
+}
+.clearfix:after {
+	content: "";
+	height: 0;
+	line-height: 0;
+	display: block;
+	visibility: hidden;
+	clear: both;
+}
+.clearfix {
+	zoom: 1;
+}
+a{
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	color: #0266A2;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/*css 初始化 E */
+/*top*/
+.top{
+	height: 55px;
+	background: #2189bf;
+	overflow: hidden;
+}
+.top-l{
+	width: 35px;
+	height: 38px;
+	background: white;
+	margin-top: 8px;
+	margin-left: 50px;
+	position: relative;
+}
+.top-l-l{
+	width: 15px;
+	height: 15px;
+	background: white;
+	border-top: 3px solid #2189bf;
+	border-left: 3px solid #2189bf;
+	position: absolute;
+	bottom: 0px;
+	right: 0px;
+}
+.top-btn{
+	width: 310px;
+	height: 30px;
+	background: white;
+	border-radius: 5%;
+}
