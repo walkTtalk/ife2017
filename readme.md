@@ -15,7 +15,7 @@
 
 
 ##JS
-- task01 [任务一：零基础JavaScript编码（一）](https://irwenjing.github.io/ife2017/02_js/task01/task01.html)
+- task01 [任务一：零基础JavaScript编码（一）](https://irwenjing.github.io/ife2017/02_js/task03/task01.html)
 - task02 [任务二：零基础JavaScript编码（二）](https://irwenjing.github.io/ife2017/02_js/task02/task02.html)
 - task03 [任务三：零基础JavaScript编码（三）](https://irwenjing.github.io/ife2017/02_js/task03/task03.html)
 
