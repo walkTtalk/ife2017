@@ -26,6 +26,11 @@
 ##JS
 - task01
 任务一：零基础JavaScript编码（一）
+- task02
+任务二：零基础JavaScript编码（二）
+- task03
+任务三：零基础JavaScript编码（三）
+
 
 
  
