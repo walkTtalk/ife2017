@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>task04</title>
+	<style type="text/css">
+		#wrap div{
+			box-sizing: padding-box;
+			display: inline-block;
+			cursor: pointer;
+			height: 50px;
+			min-width: 50px;
+			padding: 0 20px;
+			line-height: 50px;
+			background-color: #f00;
+			color: #fff;
+			font-size: 20px;
+			text-align: center;
+			margin: 4px 10px 4px 0px;
+		}
+	</style>
+</head>
+<body>
+	<input type="text">
+	<button type="button" id=inLeft>左侧入</button>
+	<button type="button" id=inRight>右侧入</button>
+	<button type="button" id=outLeft>左侧出</button>
+	<button type="button" id=outRight>右侧出</button>
+	<div id="wrap"></div>
+
+
+	<script type="text/javascript">
+		window.onload=function(){
+			var EventUtil = {
+				addHandler:function(element, type, handler){
+					if(element.addEventListener){
+						element.addEventListener(type, handler, false);
+					}else if(element.attachEvent){
+						element.attachEvent('on' + type, handler);
+					}else{
+						element['on' +type] = handler;
+					}
+				}
+			}
+
+			/* 
+			1.初始化(a，先获取节点，声明空数组)
+			2，绑定事件监听及函数方法
+			3，渲染页面
+			4.跨浏览器兼容
+
+			**/
+
+			var txt = document.getElementsByTagName('input')[0];
+			var btn = document.getElementsByTagName('button');
+			var wrap = document.getElementById('wrap');
+			var pattern =/^[0-9]+$/;
+
+			var queue = {
+				//整段代码的关键需要理解this关键字
+				arr:[],
+
+				addLeft:function(num){
+					this.arr.unshift(num);
+					this.draw();
+					txt.value = '';
+				},
+				addRight:function(num){
+					this.arr.push(num);
+					this.draw();
+					txt.value = '';
+				},
+
+				isEmpty:function(){
+					if(this.arr.length == 0){
+						return true;
+					}
+				},
+
+				removeLeft:function(num){
+					if(!this.isEmpty()){
+						alert(Number(this.arr.shift()));
+						this.draw();
+					}else{
+						alert('该队列已为空。')
+					}
+				},
+
+				removeRight:function(num){
+					if(!this.isEmpty()){
+						alert(Number(this.arr.pop()));
+						this.draw();
+					}else{
+						alert('该队列已为空。');
+					}
+				},
+
+				draw:function(){
+					var canvas = '';
+					every(this.arr, function(num){
+						canvas += '<div>' + Number(num) + '<div>';
+					});
+
+					wrap.innerHTML = canvas;
+					autoDelete();
+				},
+				deleteNum:function(index){
+					this.arr.splice(index,1);
+					this.draw();
+				}
+			}
+
+			//遍历函数，与Array类型的map()方法类似。
+			function every(arr, fn){
+				for(var cur = 0; cur < arr.length; cur++){
+					fn(arr[cur]);
+				}
+			}
+
+			function autoDelete(){
+				for(var cur = 0; cur < wrap.childNodes.length; cur++){
+					//利用IIFE与闭包来消除作用域链的副作用。
+					EventUtil.addHandler(wrap.childNodes[cur], "click", (function(cur){
+						return function(){queue.deleteNum(cur);}
+					})(cur));
+
+				}
+			}
+
+			EventUtil.addHandler(btn[0], 'click', function(){
+				var number = txt.value;
+				if(pattern.test(number)){
+					queue.addLeft(number);
+				}else{
+					alert('请输入纯整数。');
+				}
+			});
+
+			EventUtil.addHandler(btn[1], 'click', function(){
+				var number = txt.value;
+				if(pattern.test(number)){
+					queue.addRight(number);
+				}else{
+					alert('请输入纯整数。');
+				}
+			})
+
+
+
+			EventUtil.addHandler(btn[2], 'click', function(){
+				queue.removeLeft();
+			});
+
+			EventUtil.addHandler(btn[3], 'click', function(){
+				queue.removeRight();
+			});
+
+
+		}
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>理解this</title>
+</head>
+<body>
+	
+	<script type="text/javascript">
+		
+		var obj = {
+			foo: function(){
+				console.log(this)
+			}
+		}
+
+		var bar = obj.foo
+		obj.foo() //打印出的this 是obj
+		bar() //打印出的this是window
+
+		var obj = {
+			foo:function(){
+				console.log(this)
+			}
+		}
+
+
+		function func(){
+			console.log(this)
+		}
+		// func()
+		func.call(undefined) //window
+
+
+		var obj = {
+			foo: function(){
+				console.log(this)
+			}
+		}
+		// obj.foo()
+		obj.foo.call(obj);
+
+
+
+		//语法
+
+		function fn(){
+			console.log(this)
+		}
+		function fn2(){
+			console.log(this)
+		}
+		var arr = [fn, fn2]
+		arr[0]() //可以假想为arr.0(),然后转换为arr.0.call(arr),那么里面的this就是arr了。
+
+
+
+		/* 
+
+		1.this就是你call一个函数时传入的context。
+		2.如果你的函数调用形式不是call的形式，请按照[转换代码]将其转换为call的形式。
+
+		js里面有三种函数调用形式：
+
+		1. func(p1, p2) 等价于 func.call(undefined, p1, p2)
+		2. obj.child.method(p1, p2) 等价于 obj.child.method.call(obj.child, p1, p2)
+		3. func.call(context, p1, p2) //先不讲apply
+
+
+
+
+
+		**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>

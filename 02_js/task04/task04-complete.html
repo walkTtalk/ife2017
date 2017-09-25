@@ -5,7 +5,7 @@
 	<title>模拟队列</title>
 	<style>
 	#wrap div{
-		box-sizing:padding-box;
+		box-sizing:padding-box;  
 		display:inline-block;
 		cursor:pointer;
 		height: 50px;
@@ -19,7 +19,6 @@
 		margin: 4px 10px 4px 0px;
 	}
 	</style>
-	<script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 <input type="text">
@@ -50,6 +49,12 @@
 	var btn = document.getElementsByTagName("button");
 	var wrap =document.getElementById("wrap");
 	var pattern =/^[0-9]+$/;
+
+
+	//var pattern=/[^0-9]/;		[^0-9]表示非0-9的任意字符
+	//var pattern=/^[a-z]oog[0-9]$/;   ^强制首匹配，$强制尾匹配
+
+
 
 		var queue = {
 		//整段代码的关键，需理解this关键字。
