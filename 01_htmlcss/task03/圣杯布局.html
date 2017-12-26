@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>圣杯布局</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.aside{
+			width: 300px;
+			height: 400px;
+			background: yellow;
+			margin-left: -100%;
+			left: -310px;
+		}
+		.ad{
+			width: 300px;
+			height: 400px;
+			background: pink;
+			margin-left: -300px;
+			right: -310px;
+		}
+		.main{
+			height: 500px;
+			width: 100%;
+			background: #CCC;
+		}
+		.aside,.ad,.main{
+			float: left;
+			position: relative;
+		}
+		.ct{
+			margin: 0 310px;
+			min-width: 300px;  /*设置最小宽度防止页面错乱*/
+		}
+	</style>
+</head>
+<body>
+	<div class="ct">
+		<div class="main">main</div>
+		<div class="aside">aside</div>
+		<div class="ad">ad</div>
+
+	</div>
+	
+</body>
+</html>
