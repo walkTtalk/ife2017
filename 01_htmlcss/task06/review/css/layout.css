@@ -1,0 +1,411 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	background: #eee;
+	font-size: 12px;
+}
+.wrap{
+	width: 980px;
+	height: 1386px;
+	margin: 0 auto;
+	background: #fff;
+}
+.container{
+	width: 892px;
+	margin: 0 auto;
+}
+.clearfloat:after{
+	content: '';
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+}
+.clearfloat{
+	zoom: 1;
+}
+
+ /*head部分 */
+.head{
+	height: 61px;
+	border-bottom: 2px solid #938e8c;
+	font-family: '黑体';
+	position: relative;
+}
+.logo{
+	width: 110px;
+	height: 61px;
+	background: #d45d5c;
+	position: relative;
+}
+.logo a{
+	text-decoration: none;
+	color: #fff;
+	position: absolute;
+	bottom: 3px;
+	left: 5px;
+}
+.date{
+	position: absolute;
+	right: 0;
+	bottom: 3px;
+	color: #d45d5c;
+}
+
+ /*top部分 */
+
+ .top{
+ 	margin-top: 34px;
+ }
+ .top-left{
+ 	width: 641px;
+ 	height: 301px;
+ 	background: url(../images/banner.jpg) no-repeat;
+ 	background-size: cover;
+ 	position: relative;
+ 	float: left;
+ }
+ .top-left:before{
+ 	width: 191px;
+ 	height: 301px;
+ 	background: #72a664;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	content: '';
+ 	opacity: 0.6;
+ }
+ .top-left:after{
+ 	width: 191px;
+ 	height: 301px;
+ 	background: #e1abc3;
+ 	content: '';
+ 	position: absolute;
+ 	top: 0;
+ 	right: 0;
+ 	opacity: 0.6;
+ }
+ .top-right{
+ 	width: 203px;
+ 	height: 301px;
+ 	float: right;
+ 	border-top: 2px solid #cc8091;
+ 	position: relative;
+ }
+ .friendlink{
+ 	line-height: 35px;
+ 	font-size: 24px;
+ }
+ .friendlink a{
+ 	text-decoration: none;
+ }
+ .tr{
+ 	color: #000;
+ 	font-family: '微软雅黑';
+ 	text-decoration: underline;
+ 	font-variant: small-caps;
+ 	text-transform: capitalize;
+ }
+ .top-right>p{
+ 	font-size: 12px;
+ 	color: #676767;
+ 	font-family: 'KaiTi';
+ 	line-height: 10px;
+ }
+ .top-right .seven{
+ 	font-size: 116px;
+ 	color: #75b86b;
+ 	font-family: '微软雅黑';
+ 	/*font-style: italic;*/
+ 	transform: skew(-10deg);
+ 	margin-top: 70px;
+ }
+ .top-right span{
+ 	color: #cc8091;
+ 	font-family: '微软雅黑';
+ 	position: absolute;
+ }
+ .num1{
+ 	font-size: 55px;
+ 	bottom: 0;
+ }
+ .num2{
+ 	font-size: 21px;
+ 	left: 83px;
+ 	bottom: 22px;
+ }
+ .num3{
+ 	left: 83px;
+ 	bottom: 11px;
+ 	
+ }
+ /*middle部分 */
+.middle{
+	height: 175px;
+	margin-top: 40px;
+	font-family: '微软雅黑';
+}
+.box{
+	width: 200px;
+	float: left;
+	margin-right: 20px;
+}
+.bl{
+	font-size: 16px;
+	margin-bottom: 10px;
+}
+.bl a{
+	color: #418c59;
+	font-weight: bold;
+}
+.blt{
+	color: #767777;
+	line-height: 16px;
+}
+.bm{
+	font-size: 12px;
+	margin-bottom: 10px;
+}
+.bm a{
+	color: #d2994f;
+	font-weight: bold;
+}
+.bmt{
+	color: #231815;
+	line-height: 16px;
+	opacity: 0.7;
+}
+.br{
+	font-size: 16px;
+	margin-bottom: 5px;
+}
+.br a{
+	color: #cc7680;
+	font-weight: bold;
+}
+.brt{
+	color: #231815;
+	opacity: 0.7;
+	line-height: 18px;
+	margin-bottom: 20px;
+
+}
+.brt-s{
+	color: #231815;
+	opacity: 0.7;
+	line-height: 25px;
+}
+.brt-w{
+	color: #cd4a48;
+	opacity: 0.7;
+}
+ /*bottom部分 */
+
+ .bottom{
+ 	height: 633px;
+ 	margin-top: 50px;
+ }
+ .bottom-left{
+ 	width: 415px;
+ 	float: left;
+
+ }
+ .bottom-left-title1{
+ 	font-size: 72px;
+ 	color: #f5e327;
+ 	font-family: '黑体';
+ 	font-weight: bold;
+ 	/*font-style: italic;*/
+ 	font-style: oblique;
+ }
+ .bottom-left-title2{
+ 	margin-left: 20px;
+ 	font-size: 42px;
+	color: #11456b;
+	font-family: '黑体';
+	font-weight: bold;
+	line-height: 16px;
+ }
+ .bottom-left-title3{
+ 	font-size: 33px;
+ 	color: #11456b;
+ 	font-family: '黑体';
+	font-weight: bold;
+	margin-top: 10px;
+ }
+ .bottom-hr{
+ 	width: 415px;
+ 	height: 2px;
+ 	background: #11456b;
+ 	margin: 10px 0 15px 0;
+ }
+ /*.bottom-txt{
+	overflow: hidden;
+ }*/
+ .b-l-txt{
+	font-size: 12px;
+	color: #767777;
+	line-height: 16px;
+ }
+ .bli{
+ 	text-indent: 2em;
+ }
+ .b-l-txt-f{
+ 	width: 72px;
+ 	height: 70px;
+ 	line-height: 70px;
+ 	font-size: 70px;
+ 	color: #f5e327;
+ 	/*font-family: '微软雅黑';*/
+ 	float: left; 
+ }
+ .img_box{
+ 	float: right;
+ 	height: 288px;
+ 	width: 167px;
+ 	padding: 20px 10px 10px 20px;
+ }
+
+ .bottom-right{
+ 	width: 458px;
+ 	float: right;
+ }
+
+ .b-r-picture{
+	width: 458px;
+	height: 275px;
+	background: url(../images/photo.jpg) no-repeat;
+	background-size: cover;
+	position: relative;
+ }
+ .b-r-b{
+ 	width: 458px;
+ 	height: 61px;
+ 	background: rgba(0,0,0,0.3);
+ 	position: absolute;
+ 	bottom: 0;
+ }
+ .b-r-t1{
+ 	display: inline-block;
+	font-size: 26px;
+	color: #fff;
+	height: 44px;
+	line-height: 44px;
+	margin-top: 8px;
+	border-left: 3px solid #72b16a;
+	margin-left: 45px;
+	padding-left: 10px;
+	font-family: '微软雅黑';
+ }
+ .b-r-t2{
+	color: #72b16a;
+	font-style: italic;
+	display: inline-block;
+	margin-left: 8px;
+ }
+
+ .bottom-right .b-r-tab>p{
+ 	font-size: 16px;
+ 	font-family: '宋体';
+ 	color: #5a5b5b;
+ 	margin-top: 30px;
+ 	margin-left: 45px;
+ 	line-height: 16px;
+ 	position: relative;
+
+ }
+ .bottom-right .b-r-tab>p::before{
+	position: absolute;
+	content: '';
+	height: 0;
+	border-bottom: 10px solid #10456b;
+	border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+	left: -16px;
+    top: 5px;
+ }
+ .b-r-tab span{
+ 	font-size: 15px;
+ 	font-style: italic;
+ }
+ .m-r-shop{
+ 	margin-top: 52px;
+ 	width: 260px;
+ 	height: 160px;
+ 	background: #d45d5c;
+ }
+ .m-r-o{
+ 	font-size: 110px;
+ 	color: #fff;
+ 	font-family: '微软雅黑';
+ 	margin-left: 10px;
+ }
+ .m-r-s-txt{
+ 	float: left;
+ }
+ .m-r-s-hr{
+ 	width: 2px;
+ 	height: 86px;
+ 	background: #fff;
+ 	margin: 32px 5px 0 5px;
+ }
+ .m-r-s-note{
+ 	font-size: 21px;
+ 	color: #fff;
+ 	font-family: 'SimHei';
+ 	line-height: 24px;
+ 	font-style: oblique;
+ 	margin-top: 35px;
+ }
+ .m-r-s-mote1{
+ 	font-size: 12px;
+ 	color: #fff;
+ 	font-family: 'SimHei';
+ 	line-height: 12px;
+ 	margin-left: 90px;
+ 	margin-top: -50px;
+ }
+
+ .m-r-hw{
+ 	float: right;
+ 	width: 180px;
+ 	height: 150px;
+ 	margin-top: -160px;
+ }
+ .m-r-hw-txt{
+ 	font-size: 14px;
+ 	color: #5a5b5b;
+ 	font-family: 'SimHei';
+ 	font-style: oblique;
+ 	text-indent: 3em;
+ }
+ .mark1,.mark2{
+ 	width: 15px;
+ 	height: 15px;
+ 	font-size: 71px;
+ 	color: #d45d5c;
+ 	font-family: 'SimHei';
+ }
+ .mark2{
+ 	margin-left: 120px;
+ 	margin-top: -20px;
+ }
+ .mark1{
+ 	margin-left: -40px;
+ }
+ /*foot部分 */
+
+ .foot{
+ 	margin-top: 35px;
+ 	width: 892px;
+ 	height: 1px;
+ 	background: #938e8c;
+ 	position: relative;
+ }
+ .foot-logo{
+ 	position: absolute;
+ 	right: 0;
+ 	color: #d45d5c;
+ }
